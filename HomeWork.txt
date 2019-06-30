@@ -1,0 +1,23 @@
+1) ex 4, 6 :
+https://brushbasics.gitbook.io/algorithms/untitled
+
+2) https://brushbasics.gitbook.io/algorithms/untitled/problems
+
+
+-- 30 june 2019---
+3) findMax()
+4) findBothMinMax: int[2] : int[0]--> min and int[1]--> max
+4) modifiedFindMin:
+5) Q-1 : The above function always runs O(n^2) 
+time even if the array is sorted. 
+It can be optimized by stopping the algorithm if 
+inner loop didn’t cause any swap. WAP.
+6) O(n) : Find second Min using modified
+7) O(n) : Find second Min and second MAx using modified version 
+8)  Paytm : rs 10 : O(n) no bubble 
+// Find max product in an array
+	// int[] arr = { 44, 56, 90, 23, 12, 5 };
+	// int[] arr = { -44, 56, 90, 23, 12, 5, -100 };
+	
+9) https://codingbat.com/prob/p105771
+10) remove duplicates without sorting

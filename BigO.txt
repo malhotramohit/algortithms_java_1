@@ -1,0 +1,125 @@
+f(n) = 4n2
+f(n) = O(n) ?
+
+4n^2 <= c*n
+
+n=2,
+16 <= c*2 , c= 8?
+n=3,
+36 <= c*3 , c = 12? , c= 4n?
+
+n=4
+64 , 4n*n = 4*4*4 = 64
+ n>n0 :?? n0 and c ?
+ 
+ 
+ 
+f(n) = 50n3 + 20n + 4
+g(n) = n3
+
+f(n) = O(g(n))  ?
+
+f(n) <= c(g(n)) , n >n0
+50n3 + 20n + 4 < c(n3) , n>n0
+50n3 + 20n + 4 = 51n3
+n3 = 20n+4
+
+50n3 + 20n + 4 < c(n3) , n>n0
+
+c=1000,n=2
+74,74
+
+
+---------Ex 3---------
+1) f(n) = 2n // LS running on P3
+, g(n)= 4n // LS running on P2
+f(n) = O(g(n))   --->? c = 1
+2n <= c*4n , n >n0
+---
+g(n) = O(f(n)) ---  ?
+g(n)  <= c(f(n)) , n>n0
+4n <= c*2n , >c=2
+c=2
+
+----Ex 4-----
+f(n) = 2n+8
+g(n)= n+4
+
+f(n) = O(g(n)) -- ? possible for c =2 , n0=1
+f(n) <= c(g(n)) , n>n0
+2n+8 <= c(n+4) ?
+n=1, 10, 5 , c=1
+n=2, 12, 6 , c=1
+--- c=2
+n=1 , 10 , 10
+
+g(n) = O(f(n))--? possible
+g(n)<= c(f(n)) , n>n0
+n+4 <= c(2n+8) ? c=1
+
+
+----Ex 5-----
+f(n) = 2n+8
+g(n) = n
+
+ANS 1:
+c=10, n0=1
+ANS 2:
+c=3, n0=8
+
+f(n) = O(n)---?
+
+2n+8 <= c*n  ,n>n0
+
+n=1, c=1: 10 <= 1 NP
+n=2, c=2: 12 <= 4 NP
+n=1 , c=10 <= 10, 10 P
+n=2 , c=10  , 12,20 P
+n=3, c=10 ,  14 , 30
+
+
+--- 
+2n+8, 6n, 100n , 1000n+100 : O(n)
+n2 = O(n)  wrong
+n2 <= c*n , c =n "C" can never be n bcoz it is const
+n3 <> O(n) , c=n2
+ n4 <> O(n2)
+ 
+ -- 
+ 2n^2+8 = O(n2) --upper bound  -- worst case
+ 
+ --
+ Big Oh -- Big Omega
+ f(n) = bigOmega(g(n))
+ 
+ LHS >= c*RHS, n>n0
+ f(n) >= c*g(n), n>n0 -- Lower ---bound best
+ O(n)
+ bigOmega(1) 
+ 23,34,56,12,89 , 89 (n compar) O(n)
+ : 23 
+ 
+ QS: worst case O(n2) : array sorted
+ QS : best case  (nlogn) ; complet
+ 
+ ---theta--
+ when both O and Omega
+ f(n) = 2n
+ g(n) = 4n
+ 
+ f(n)= Theta(g(n))
+ 
+ f(n) = O(g(n))  ?
+ 2n <= c.4n , n>n0 c=1 
+ 
+ f(n)= BigOmega(g(n))  ?
+ 2n >= c.4n , n>n0 ,c =0.5, n0=1
+ 
+ 
+ -- small o , small omega---
+ tight bounds : 
+ f(n) = 2n
+ g(n) = 4n
+  f(n)= o(g(n))
+  f(n) < g(n), small o
+ 
