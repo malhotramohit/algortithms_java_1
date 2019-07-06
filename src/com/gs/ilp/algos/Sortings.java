@@ -88,7 +88,7 @@ public class Sortings {
 		// Major op1 = : compar ;: O(n2)
 		// Major op1 = : swaping :: O(n2)
 		// Best case : 1 2 3 4 5 .......100
-		// Major op1 = : compar ;: O(n2)
+		// Major op1 = : compar ;: O(n2) -- > O(n)
 		// Major op1 = : swaping :: 0
 		for (int j = 0; j < arr.length; j++) { // T(n) = O(n2)
 
@@ -111,7 +111,7 @@ public class Sortings {
 	 * @return
 	 */
 	private static int findSecondMax(int[] arr) {
-		for (int j = 0; j < 3; j++) { // T(n) = O(n2)
+		for (int j = 0; j < 2; j++) { // T(n) = O(n2)
 
 			for (int i = 0; i < arr.length - j - 1; i++) { // O(n)
 				if (arr[i] > arr[i + 1]) {
@@ -122,7 +122,7 @@ public class Sortings {
 			}
 
 		}
-		return arr[arr.length - 3];
+		return arr[arr.length - 2];
 	}
 
 	/**

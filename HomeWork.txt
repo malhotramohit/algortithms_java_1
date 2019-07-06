@@ -5,19 +5,25 @@ https://brushbasics.gitbook.io/algorithms/untitled
 
 
 -- 30 june 2019---
-3) findMax()
-4) findBothMinMax: int[2] : int[0]--> min and int[1]--> max
-4) modifiedFindMin:
-5) Q-1 : The above function always runs O(n^2) 
+3) findMax() : Given an unsorted array , max ele
+4) findBothMinMax:  Given an unsorted array  
+return array {min,max} ,int[2] : int[0]--> min and int[1]--> max
+5) modifiedFindMin: one pass of bubble sort , reverse the logic
+6) Q-1 : The above function always runs O(n^2) 
 time even if the array is sorted. 
 It can be optimized by stopping the algorithm if 
-inner loop didn’t cause any swap. WAP.
-6) O(n) : Find second Min using modified
-7) O(n) : Find second Min and second MAx using modified version 
-8)  Paytm : rs 10 : O(n) no bubble 
+inner loop didn’t cause any swap. WAP. Hint take one flag 
+
+7) O(n) : Find second Min using modified 2 passes of bubble and return second last
+8) O(n) : Find second Min and second MAx using modified version 
+9)  Paytm : rs 10 : O(n) no bubble 
 // Find max product in an array
-	// int[] arr = { 44, 56, 90, 23, 12, 5 };
-	// int[] arr = { -44, 56, 90, 23, 12, 5, -100 };
+	// int[] arr = { 44, 56, 90, 23, 12, 5 };: 56 * 90
+	// int[] arr = { -44, 56, 90, 23, 12, 5, -100 }; : -44*-100= 4400
 	
-9) https://codingbat.com/prob/p105771
-10) remove duplicates without sorting
+10) https://codingbat.com/prob/p105771
+11) remove duplicates without sorting Hint : take one extra array
+
+
+-- 2 july 2019---- IND vs Bang
+1) Imperative Loop find power(x,n) : T(n) , S(n)
